@@ -3,20 +3,20 @@
     "pins": [
       {
         "package": "AudioKit",
-        "repositoryURL": "https://github.com/AudioKit/AudioKit",
+        "repositoryURL": "https://github.com/Moriquendi/AudioKit",
         "state": {
-          "branch": null,
-          "revision": "8c19f5e377d00603ecb8f2af30b7e9dd96d05a95",
-          "version": "5.3.1"
+          "branch": "main",
+          "revision": "a5881f3c4a00314990721d50a2de045a75366b4f",
+          "version": null
         }
       },
       {
         "package": "AudioKitEX",
-        "repositoryURL": "https://github.com/AudioKit/AudioKitEX",
+        "repositoryURL": "https://github.com/Moriquendi/AudioKitEX",
         "state": {
-          "branch": null,
-          "revision": "0e171a63cf225b587fc8ce797b42249076453643",
-          "version": "5.3.1"
+          "branch": "main",
+          "revision": "ba0d140bcf90be37bfc2145ce5d5632b7b3c7c74",
+          "version": null
         }
       },
       {
