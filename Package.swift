@@ -9,8 +9,8 @@ let package = Package(
     products: [.library(name: "SoundpipeAudioKit", targets: ["SoundpipeAudioKit"])],
     dependencies: [
         .package(url: "https://github.com/AudioKit/KissFFT", from: "1.0.0"),
-        .package(url: "https://github.com/Moriquendi/AudioKit", .branch("main")),
-        .package(url: "https://github.com/Moriquendi/AudioKitEX", .branch("main")),
+        .package(url: "https://github.com/Moriquendi/AudioKit", .branch("pompom")),
+        .package(url: "https://github.com/Moriquendi/AudioKitEX", .branch("pompom")),
     ],
     targets: [
         .target(name: "Soundpipe",
