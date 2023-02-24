@@ -1,11 +1,10 @@
 // Copyright AudioKit. All Rights Reserved. Revision History at http://github.com/AudioKit/AudioKit/
-
+#if !os(tvOS)
 import AudioKit
 import SoundpipeAudioKit
 import XCTest
 
 class AmplitudeEnvelopeTests: XCTestCase {
-
     func testAttack() {
         let engine = AudioEngine()
         let input = Oscillator(waveform: Table(.triangle))
@@ -102,5 +101,5 @@ class AmplitudeEnvelopeTests: XCTestCase {
         audio.append(engine.render(duration: 0.5))
         testMD5(audio)
     }
-
 }
+#endif
