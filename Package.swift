@@ -1,11 +1,11 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "SoundpipeAudioKit",
-    platforms: [.macOS(.v10_13), .iOS(.v11), .tvOS(.v11)],
+    platforms: [.macOS(.v12), .iOS(.v13), .tvOS(.v13)],
     products: [.library(name: "SoundpipeAudioKit", targets: ["SoundpipeAudioKit"])],
     dependencies: [
         .package(url: "https://github.com/AudioKit/KissFFT", from: "1.0.0"),
@@ -20,7 +20,7 @@ let package = Package(
                     .headerSearchPath("lib/inih"),
                     .headerSearchPath("Sources/soundpipe/lib/inih"),
                     .headerSearchPath("modules"),
-                    .headerSearchPath("external")
+                    .headerSearchPath("external"),
                 ]),
         .target(name: "SoundpipeAudioKit", dependencies: ["AudioKit", "AudioKitEX", "CSoundpipeAudioKit"]),
         .target(name: "CSoundpipeAudioKit", dependencies: ["AudioKit", "AudioKitEX", "Soundpipe"]),
